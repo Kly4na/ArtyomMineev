@@ -15,7 +15,7 @@ def fib_2(n_0: int) -> int:
         return 1
     return fib_2(n_0-1) + fib_2(n_0-2)
 
-N: int = int(input("ввиди число" + '\n'))
+N: int = int(input("Введите число" + '\n'))
 print(fib_2(N))
 
 T1: int = timeit.timeit("fib_1(N)", setup="from __main__ import fib_1, N", number=10000)
